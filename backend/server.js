@@ -10,16 +10,22 @@ const app = express();
 
 connectDB();
 
+
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://expense-tracker-pro-9yil.onrender.com',
-    'https://expense-tracker-jn8shodkw-naods-projects-65dac5db.vercel.app', // <-- add this!
-    // Optionally, allow preview URLs:
+    // Main production domain
+    'https://expense-tracker-pro-gamma.vercel.app',
+    // Main branch deployment
+    'https://expense-tracker-pro-git-main-naods-projects-65dac5db.vercel.app',
+    // Preview or other deploys
+    'https://expense-tracker-4yazyxni2-naods-projects-65dac5db.vercel.app',
+    // Allow all Vercel subdomains (wildcard, optional but powerful):
     /^https:\/\/.*\.vercel\.app$/
   ],
   credentials: true
 }));
+
 
 // Comment out routes temporarily to test
 app.use('/api/auth', require('./routes/auth'));
