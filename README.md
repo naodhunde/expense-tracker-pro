@@ -6,6 +6,11 @@ A full-stack MERN expense tracking application with JWT authentication, real-tim
 # LIVE DEMO
 https://expense-tracker-pro-gamma.vercel.app/
 
+# SCREENSHOTS
+<img width="3833" height="1910" alt="Screenshot 2025-11-17 190059" src="https://github.com/user-attachments/assets/6c574a40-5fc5-427e-adbd-cfe990e5bd5b" />
+<img width="3833" height="1897" alt="Screenshot 2025-11-17 190120" src="https://github.com/user-attachments/assets/9153ac1b-e49b-4910-abcc-004650205275" />
+
+
 ## FEATURES
 
 - **Secure Authentication** - JWT-based user registration and login with password hashing
