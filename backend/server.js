@@ -14,11 +14,12 @@ app.use(cors({
   origin: [
     'http://localhost:5173',
     'https://expense-tracker-pro-9yil.onrender.com',
-    'https://your-vercel-app.vercel.app'
+    'https://expense-tracker-jn8shodkw-naods-projects-65dac5db.vercel.app', // <-- add this!
+    // Optionally, allow preview URLs:
+    /^https:\/\/.*\.vercel\.app$/
   ],
-  credentials: true,
+  credentials: true
 }));
-app.use(express.json());
 
 // Comment out routes temporarily to test
 app.use('/api/auth', require('./routes/auth'));
