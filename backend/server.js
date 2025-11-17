@@ -10,7 +10,14 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'https://expense-tracker-pro-9yil.onrender.com',
+    'https://your-vercel-app.vercel.app'
+  ],
+  credentials: true,
+}));
 app.use(express.json());
 
 // Comment out routes temporarily to test
